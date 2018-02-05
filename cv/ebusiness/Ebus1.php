@@ -5,7 +5,7 @@
     
     <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
-    </script> type="text//javascript" src="cost_ca;c.js></script
+    </script> type="text//javascript" src="cost_calc.js></script
     
 </head>
 
@@ -23,10 +23,10 @@
         
         <br/> 
         
-        <Label for="aws">
+        <label for="aws">
             <input type="radio" id="aws" name="product" onClick="disablebtnProceed()"/>
             AWS @ $300
-        </Label>
+        </label>
         
         <br/>
         <br/>
@@ -38,14 +38,14 @@
         
         <br>
         
-        <Label for ="total">
+        <label for ="total">
             Total
             <input type="text" id="total" value="0.00" readonly/>
-        </Label>
+        <label>
         
         <br/>
         
-        <button type ="submit" id="btnProceed" disable>Add to Shopping Cart</button>
+        <button type ="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
         
         </form>
         
