@@ -1,14 +1,32 @@
 #section1{
     background:url("https://c1.staticflickr.com/5/4522/38535116642_d74ce2d523_b.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    width:100%;
+    left:0;
+    top:0;
     
 }
 
 #section2{
     background:url("http://i2.wp.com/www.pbs.org/wgbh/frontline/wp-content/uploads/2016/11/FL_DividedStatesOfAmerica.jpg?resize=1200%2C630");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    width:100%;
+    left:0;
+    top:0;
 }
 
 #section3{
     background:url("http://wallpaperfast.com/wp-content/uploads/2013/06/Ireland-view-from-newgrange-Desktop-Wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    width:100%;
+    left:0;
+    top:0;
 }
 
 .section{

@@ -20,7 +20,7 @@ session_start();
              <label for="user_pin">PIN</label>
              <input type="password" id="user_pin" placeholder="Card PIN" maxlength="4">
         
-        <button type="Submit" id="btnPurchase" disable>Proceed with Purchase/button>
+        <button type="Submit" id="btnPurchase" disable>Proceed with Purchase</button>
         
         </form>
         
