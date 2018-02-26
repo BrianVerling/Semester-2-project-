@@ -1,0 +1,18 @@
+.mainheading{
+    text-align: center;
+}
+body{
+    background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxc_VTxXAtvb4BvhGpDshr5jb7zhR7TpZsA-dCi9smXX6qky0W")                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    width:100%;
+    left:0;
+    top:0;
+
+}
+button {
+    background-color: red;
+    color:white;
+    
+}
