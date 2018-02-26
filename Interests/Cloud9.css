@@ -9,4 +9,10 @@ body{
     width:100%;
     left:0;
     top:0;
+
+}
+button {
+    background-color: red;
+    color:white;
+    
 }
