@@ -1,0 +1,18 @@
+.mainheading{
+    text-align: center;
+}
+body{
+    background:url("http://www.droid-life.com/wp-content/uploads/2016/02/gmail-logo.jpg");                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    width:100%;
+    left:0;
+    top:0;
+
+}
+button {
+    background-color: red;
+    color:white;
+    
+}
