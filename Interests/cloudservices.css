@@ -1,0 +1,43 @@
+#section1{
+    background:url("https://business.pinterest.com/sites/default/files/mdp_logo_lg/2017-02/salesforce-888.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    width:100%;
+    left:0;
+    top:0;
+    
+}
+
+#section2{
+    background:url("https://cdn.slant.co/1af70de1-29ca-4349-94f5-09e768d5160f/-/format/jpeg/-/progressive/yes/-/scale_crop/480x270/center/");
+    background-size: cover;
+    min-height: 100%;
+    width:100%;
+    left:0;
+    top:0;
+}
+
+#section3{
+    background:url("http://www.smbnation.com/images/aws-logo-100584713-carousel.idge.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    width:100%;
+    left:0;
+    top:0;
+}
+#section4{
+    background:url("http://www.droid-life.com/wp-content/uploads/2016/02/gmail-logo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    width:100%;
+    left:0;
+    top:0;
+}
+
+.section{
+    text-align: center;
+    color: white;
+}
