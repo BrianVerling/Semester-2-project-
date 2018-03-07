@@ -1,71 +1,136 @@
-
 <?php
-// Start the session
-session_start()
+// start the session
+session_start();
 ?>
-<!DOCTYPE html>
+
 <html>
     <head>
+        <title>Enter Details</title>
         
-        <title> Enter Details</title>
-        
+        <link rel="stylesheet" href="Ebus.css" type="text/css" />
         
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript" src="ebus2_validator.js"></script>
-          <link rel="stylesheet" href="ebus.css" type="text/css" />
+         <script type="text/javascript" src="ebus2_validator.js"></script>
+         <style type = "text/css">
+             #content {
+                  top:8em;
+                  left:25em;
+                  width:30em;
+                  height:30em;
+                  position:absolute;
+                  border-style:ridge;
+             }
+ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background-color: 	#FE9A2E;
+}
+li{
+    float: left;
+}
+li a{
+    display: block;
+    color:white;
+    text-align:center;
+    padding: 10px 59px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #111;
+}
+input[type=text] {
+                           border: 2px solid blue;
+                           border-radius: 4px;
+                           text-align:center;
+}
+input[type=email] {
+                           border: 2px solid blue;
+                           border-radius: 4px;
+                           text-align:center;
+}
+input[type=password] {
+                           border: 2px solid blue;
+                           border-radius: 4px;
+                           text-align:center;
+}
+ button[type=submit]:disabled {
+                           background-color: grey;
+                           border-radius: 2px;
+                           border:none;
+                           color: black;
+                           padding: 5px;
+                           cursor: pointer;
+                           
+       }
+        button[type=submit]:enabled {
+                           background-color: #FE9A2E;
+                           border-radius: 2px;
+                           border:none;
+                           color: black;
+                           padding: 5px;
+                           cursor: pointer;
+                           
+       }
+       button[onclick] {
+           background-color:#FE9A2E;
+                           border-radius: 2px;
+                           border:none;
+                           color: black;
+                           padding: 5px;
+                           cursor: pointer;
+       }
+         </style>
+         
+         
+         
+         </head></PHP>
     </head>
-    
     <body>
-        
-        <h4>Please enter your payment details.</h4>
-        
-            <br />
-            
-            <form method = "POST" action = "Ebus3.php">
-                
-                <label for="name">
-                     Name
-                </label>
-                
-                <input type="text" id="name" name="name" placeholder="Name" >
-                
-                <br>
-                
-                 <label for="email">
-                     PIN 
-                </label>
-                
-                <input type="email" id="email" name="email" placeholder="Email Address" >
-                
-                <br>
-                
-                 <label for="user_pin">
-                     PIN 
-                </label>
-                
-                <input type="password" id="user_pin" placeholder="Card Pin" maxlength="4">
-                    
-                <button type="Submit" id="btnPurchase" disabled> 
-                    Proceed with Purchase 
-                </button>
-                
+      <ul>
+        <li><a href = "../homepage.html">Home</a></li>
+        <li><a href = "..//ebusiness/Ebus1.php">E-Business</a></li>
+        <li><a href ="..//Interests/Sports.html">Cloud Services</a></li>
+        <li><a class = "active" href = "#PAYMENT">Payment Details</a></li>
+        </ul>
+        <h2>Please enter your details</h2>
+        <div id ="content">
+            <form name = "myForm"  method="POST" action="ebus3.php">
+                    <br>
+                    <label for = "name">
+                        <strong> &nbsp; Name:</strong>
+                        <br>
+                        &nbsp;<input type ='text' id ="name" name = "name"/>
+                    </label>
+                    <br><br>
+                    <label for "email">
+                        <strong>&nbsp; Email:</strong>
+                        <br>
+                        &nbsp;<input type = "email" id ="email" name="email"/>
+                    </label>
+                    <br><br>
+                    &nbsp;&nbsp;<label for="user_pin"><strong>PIN:</strong></label>
+                    <br>
+                   &nbsp;<input type="password" id="user_pin" placeholder="Card PIN" maxlength="4">
+                    <br><br><br>
+                &nbsp;&nbsp;&nbsp;<button type="submit" id="btnPurchase" disabled>Proceed with Purchase</button>
+              
             </form>
             
-            <br />
             
-            <button onClick="validateDetails()"> Validate </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onClick="validateDetails()">Validate</button>
+            
+        </div>
         
+       
         
-        <?php  
-        // Set session variables
-          $_SESSION["total"] = $_POST["total"];
-          ?>
+        <?php
+        //Set session variables
+        $_SESSION["total"] = $_POST["total"];
         
-  
+        ?>
         
-        
-    </body>
-    
-    
-    
+        </body>
+</html>

@@ -1,37 +1,60 @@
 <?php
 session_start();
+$name = $_REQUEST['name'];
+$email =$_REQUEST['email'];
 ?>
-<!DOCTYPE html>
 <html>
     <head>
         <title>RECEIPT</title>
-          <link rel="stylesheet" href="ebus.css" type="text/css" />
+        <link rel="stylesheet" href="Ebus.css" type="text/css" />
+         <PHP><head><link href="Ebus.css" rel="stylesheet" type="text/css">
+             <style type = "text/css">
+            ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background-color: 	#FE9A2E;
+}
+li{
+    float: left;
+}
+li a{
+    display: block;
+    color:white;
+    text-align:center;
+    padding: 10px 59px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #111;
+}
+                 #mainContent {
+                                top:8em;
+                                left:25em;
+                                width:30em;
+                                height:30em;
+                                position:absolute;
+                                border-style:groove;
+                 }
+             </style>
+         </head></PHP>
     </head>
     <body>
-          <?php  
-          $_SESSION["name"] = $_POST["name"];
-          $_SESSION["email"] = $_POST["email"];
-        ?>
-        <h4>RECEIPT</h4>
-        
-        <br>
-        <div class="ebus3name">
+       <ul>
+        <li><a href = "..//ebusiness/Ebus1.php">Home</a></li>
+        <li><a href ="..//Interests/Sports.html">Cloud Services</a></li>
+        <li><a class = "active" href = "#RECEIPT">Purchase Receipt</a></li>
+        </ul>
+        <h2>Purchase Receipt</h2>
+        <div id = "mainContent">
         <?php
-        // Echo session variables that were set on previous page
-        echo "Name: " . $_SESSION["name"] . ".";
-        ?>
-         </div>
-         
-         <br>  
-             <?php
-        // Echo session variables that were set on previous page
-        echo "Email: " . $_SESSION["email"] . ".";
-        ?>
+        //Echo session varaibles that were set to the previous page
+        echo("<strong>Name: </strong>". $name);
+        echo("<br><br><strong>Email: </strong>". $email);
+        echo "<br><br><strong>Total Price is $</strong>" .$_SESSION["total"] . "."; 
         
-        <br>
-             <?php
-        // Echo session variables that were set on previous page
-        echo "Total: $" . $_SESSION["total"] . ".";
         ?>
+        </div>
     </body>
 </html>

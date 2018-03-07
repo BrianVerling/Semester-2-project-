@@ -3,79 +3,183 @@
     <head>
         <title>Select Product</title>
         
-        <!--jQuery-->
+         <link rel="stylesheet" href="Ebus.css" type="text/css" />
+         
+         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript" src="cost_calc.js"></script>
-        <link rel="stylesheet" href="ebus.css" type="text/css" />
-    
-    
-    </head>
+        <script type = "text/javascript" src ="cost_calc.js"></script>
+        <style type = "text/css">
+        ul{
+            list-style-type:none;
+            margin:0;
+            padding:0;
+            width:100%;
+            overflow:hidden;
+            background-color:#FE9A2E ;
+}
+li{
+    float: left;
+}
+li a{
+    display: block;
+    color:black;
+    text-align:center;
+    padding: 16px 18px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color:#FE9A2E ;
+}
+.active {
+    background-color: #d966ff;
+}
+        
+        #maincontent {
+                        top:7em;
+                        left:25em;
+                        width:30em;
+                        height:30em;
+                        position:absolute;
+                        border-style:groove;
+        }
+        #button1 {
+            top:22.5em;
+            left:3em;
+            position:absolute;
+        }
+        #button2 {
+            top:22.5em;
+            left:13em;
+            position:absolute;
+        }
+        #button3 {
+            top:25em;
+            left:9em;
+            position: absolute;
+        }
    
+        h2 {
+            text-align:center;
+        }
+        input[type=text] {
+                           border: 2px solid black;
+                           border-radius: 4px;
+                           text-align:center;
+}
+       button[type=submit]:disabled {
+                           background-color: grey;
+                           border-radius: 2px;
+                           border:none;
+                           color: black;
+                           padding: 5px;
+                           cursor: pointer;
+                           
+       }
+       button[type=submit]:enabled {
+                          background-color:#FE9A2E;
+                          color: White;
+       }
+       button {
+            background-color: #FE9A2E;
+                           border-radius: 2px;
+                           border:none;
+                           color: white;
+                           padding: 5px;
+                           cursor: pointer;
+       }
+       button:hover {
+           background-color:#d966ff;
+           color:White;
+       }
+       
+       
+        </style>
+    </head>
     <body>
         
-         <h4>Select a Product</h4>
-         
-         <br/>
-         
-         <form method="POST" action="Ebus2.php">
-             
-             <label for="salesforce" class= "lblsalesforce"> 
-                 <input type="radio" id="salesforce" name="product" checked onClick="disablebtnProceed()"/>
-                 Salesforce @ $100
-             </label>
-             <br/>
-             
-             <label for="aws">
-                 <input type="radio" id="aws" name="product" checked onClick ="disablebtnProceed()"/>
-                 AWS @ $300
-             </label>
-             <br/>
-             
-             <label for="gmail">
-             <input type = "radio" id="gmail" name="product" checked onClick ="disablebtnProceed()"/>
-             gmail @ $400
-             </label>
-             <br/>
-             
-             <label for="cloud9">
-             <input type = "radio" id="cloud9" name="product" checked onClick ="disablebtnProceed()"/>
-             cloud 9 @ $200
-             </label>
-             <br/>
-             
-             <label for="subtotal">
-                 Sub Total &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                 <input type="text" id="subtotal" name="subtotal" value="0.00" readonly/>
-             </label>
-             <br/>
-                 
-            <label for="discount" class="lbldiscount">
-              Discount @ 5%  <input type="text" id="discount"  value="0.00" readonly/>
-            
-            </label>
-                
+        
+        
+         <ul>
+            <li> <a href="..//homepage.html"> Home</a></li>
+      <li> <a href="..//cv/cv_page1.html"> Curriculum Vitae </a> </li>
+      <li> <a href="..//Interests/Sports.html"> Interests </a> </li>
+      <li> <a href="..//ebusiness/EbusHomepage.html"> E-Business </a></li>
+      
+      </ul>
+        
+        
+        
+        
+        
+        
+        
+        
+        <PHP><head><link href="Ebus.css" rel="stylesheet" type="text/css"></head></PHP>
+      
+
+        <h2>Select A Product</h2>
+        <div id ="maincontent">
             <br>
-            
-            <label for="vat" class="lblvat">
-              VAT @ 10% &nbsp;&nbsp;&nbsp;&nbsp;
-              <input type="text" id="vat"  value="0.00" readonly/>
+        <form method ="POST" action ="Ebus2.php">
+            <label for = "salesforce">
+            &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" id="salesforce" name="product"  onClick="disablebtnProceed()"/>
+            Salesforce @ $100
             </label>
-             <br/>
-             
-             
-             <label for="total">
-                 Total &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-               <input type="text" id="total" name="total" value="0.00" readonly/>
-             </label>
-             
-             <br/>
-             
-             <button type="submit" id="btnProceed" disabled> Add to Shopping Cart</button>
-         </form>
-         
-         <br/>
-         <button onClick="calcSub()" class= "btncalc">Calculate Cost</button>
-         <a role="button" href="Ebus1.php">Clear Choice</a>
-         
+            <br/><br>
+            <label for ="cloud9">
+               &nbsp;&nbsp;&nbsp;&nbsp;<input type = "radio" id ="cloud9" name = "product" onClick = "disablebtnProceed()"/>
+                Cloud 9 @ $200
+            </label>
+            <br><br>
+            <label for= "aws">
+             &nbsp;&nbsp;&nbsp;&nbsp;<input type = "radio" id="aws" name="product" onClick="disablebtnProceed()"/>
+                Amazon Web Services @ $300
+            </label>
+            <br><br>
+            <label for ="Gmail">
+              &nbsp;&nbsp;&nbsp;&nbsp;<input type = "radio" id ="Gmail" name = "product" onClick = "disablebtnProceed()"/>
+                Gmail @ $400
+            </label>
+            
+            <br><br><br>
+            <label for ="subtotal">
+            <Strong> &nbsp;  Sub Total:</Strong> 
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type = "text" id="subtotal" name="subtotal" value="0.00" readonly/>
+            </label>
+            <br><br>
+            <label for = "discount">
+                <strong>&nbsp; Discount @ 5%:</strong>
+                <input type = "text" id ="discount" name ="discount" readonly/>
+                <br> <strong> &nbsp;&nbsp;(-Discount)</strong>
+            </label>
+            <br><br>
+            <label for ="vat">
+                <strong>&nbsp; Vat @ 10%:</strong>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type = "text" id ="vat" name ="vat" readonly />
+            </label>
+            
+            <br><br>
+            
+            <label for ="total">
+             <strong>  &nbsp; Total:</strong> 
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type ="text" id="total" name = "total" value="0.00" readonly/>
+            </label>
+          
+            <br><br>
+            <div id ="button1">
+            <button type = "submit" id="btnProceed" disable>Add to Shopping Cart</button>
+            </div>
+            </form> 
+            <div id ="button2">
+          <button onClick="calcSub();calcDisVatTotal()">Calculate Cost</button>
+          </div>
+          
+       
+        
+        <br/>
+        <div id ="button3">
+        <a href="Ebus1.php"><button>Clear Choice</a></button>
+        </div>
+        </div>
     </body>
 </html>

@@ -1,0 +1,51 @@
+html {
+    background:url("http://www.tripwiremagazine.com/wp-content/uploads/2013/02/cloud-shop_thumb.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    width :100%;
+    left:0%;
+    top:0%;
+    margin: 0;
+    padding: 0;
+}
+
+.button {
+  border-radius: 2px;
+  background-color: Pink;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  padding: 5px;
+  width: 260px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left: 650px;
+  
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 2;
+  right: 0;
+}

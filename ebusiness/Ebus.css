@@ -1,0 +1,114 @@
+body{
+    background:url("https://wallpapertag.com/wallpaper/full/1/a/1/350829-widescreen-website-background-1920x1080-windows-xp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    width:100%;
+    left:0;
+    top:0;
+}
+
+
+
+
+
+ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background-color: #FE9A2E;
+}
+
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    color:white;
+    text-align:center;
+    padding: 10px 59px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #FE9A2E;
+}
+
+        
+        #maincontent {
+                        top:7em;
+                        left:25em;
+                        width:30em;
+                        height:30em;
+                        position:absolute;
+                        border-style:groove;
+        }
+        #button1 {
+            top:22.5em;
+            left:3em;
+            position:absolute;
+        }
+        #button2 {
+            top:22.5em;
+            left:13em;
+            position:absolute;
+        }
+        #button3 {
+            top:25em;
+            left:9em;
+            position: absolute;
+        }
+        #Logo1 {
+            top:4em;
+            left:2em;
+            position: absolute;
+        }
+        h2 {
+            text-align:center;
+        }
+        input[type=text] {
+                           border: 2px solid black;
+                           border-radius: 4px;
+                           text-align:center;
+}
+       button[type=submit]:enabled {
+                           background-color: grey;
+                           border-radius: 2px;
+                           border:none;
+                           color: black;
+                           padding: 5px;
+                           cursor: pointer;
+                           
+       }
+       button[type=submit]:disabled {
+                          background-color:#FE9A2E;
+                          color: White;
+       }
+       button {
+            background-color: #FE9A2E;
+                           border-radius: 2px;
+                           border:none;
+                           color: black;
+                           padding: 5px;
+                           cursor: pointer;
+       }
+       button:hover {
+           background-color:#FE9A2E;
+           color:White;
+       }
+       
+       
+
+
+
+h1 {
+    text-align: center;
+}
+
+
+h2 {
+    text-align:center;
+}
