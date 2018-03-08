@@ -92,7 +92,7 @@ input[type=password] {
       <ul>
         <li><a href = "../homepage.html">Home</a></li>
         <li><a href = "..//ebusiness/Ebus1.php">E-Business</a></li>
-        <li><a href ="..//Cloudservices.html">Cloud Services</a></li>
+        <li><a href ="..//Interests/Cloudservices.html">Cloud Services</a></li>
         
         </ul>
         <h2>Please enter your details</h2>
