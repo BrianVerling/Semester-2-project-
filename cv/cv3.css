@@ -13,5 +13,10 @@ body{
 
 a{
     margin-left: 1300px;
-    margin-top: 500px;
+    margin-top: 200px;
+    }
+        p{
+        color: Black;
+    font-size: 200%; 
+    font-family: helvetica;
     }

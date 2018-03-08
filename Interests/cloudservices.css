@@ -10,8 +10,9 @@
 }
 
 #section2{
-    background:url("https://cdn.slant.co/1af70de1-29ca-4349-94f5-09e768d5160f/-/format/jpeg/-/progressive/yes/-/scale_crop/480x270/center/");
+    background:url("https://www.mt.nl/wp-content/uploads/2011/07/d38162fb94c72618b4fd6e4b3d384655-1310384387.png");
     background-size: cover;
+    background-repeat: no-repeat;
     min-height: 100%;
     width:100%;
     left:0;
@@ -42,7 +43,7 @@
     text-align: center;
     color: black;
 }
-center{
+li{
     
     color: Black;
     font-family: helvetica;
