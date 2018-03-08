@@ -42,7 +42,7 @@ li a:hover {
     </head>
     <body>
        <ul>
-        <li><a href = "..//ebusiness/Ebus1.php">Home</a></li>
+        <li><a href = "..//homepage.html">Home</a></li>
         <li><a href ="..//Interests/Sports.html">Cloud Services</a></li>
         <li><a class = "active" href = "#RECEIPT">Purchase Receipt</a></li>
         </ul>
