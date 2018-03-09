@@ -21,6 +21,7 @@ session_start();
                   position:absolute;
                   border-style:ridge;
              }
+                                /*This codes for my taskbar on my shop page*/
 ul{
     list-style-type:none;
     margin:0;
@@ -95,6 +96,8 @@ input[type=password] {
         <li><a href ="..//Interests/Cloudservices.html">Cloud Services</a></li>
         
         </ul>
+                                <!--this codes for my shop page2 to make sure all information is entered -->
+        
         <h2>Please enter your details</h2>
         <div id ="content">
             <form name = "myForm"  method="POST" action="ebus3.php">
@@ -112,7 +115,9 @@ input[type=password] {
                     </label>
                     <br><br>
                     &nbsp;&nbsp;<label for="user_pin"><strong>PIN:</strong></label>
-                    <br>
+                    <br> 
+                    
+                                                                                                    <!-- this code is for to validate my pin to make sure the max length entered is 4 characters -->
                    &nbsp;<input type="password" id="user_pin" placeholder="Card PIN" maxlength="4">
                     <br><br><br>
                 &nbsp;&nbsp;&nbsp;<button type="submit" id="btnPurchase" disabled>Proceed with Purchase</button>

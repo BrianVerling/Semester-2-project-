@@ -9,6 +9,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script type = "text/javascript" src ="cost_calc.js"></script>
         <style type = "text/css">
+        
+                                                    /*code for my taskbar*/
         ul{
             list-style-type:none;
             margin:0;
@@ -97,9 +99,7 @@ li a:hover {
     </head>
     <body>
         
-        
-        
-         <ul>
+        <ul>
             <li> <a href="..//homepage.html"> Home</a></li>
       <li> <a href="..//cv/cv_page1.html"> Curriculum Vitae </a> </li>
       <li> <a href="..//Interests/Sports.html"> Interests </a> </li>
@@ -107,16 +107,9 @@ li a:hover {
       
       </ul>
         
-        
-        
-        
-        
-        
-        
-        
-        <PHP><head><link href="Ebus.css" rel="stylesheet" type="text/css"></head></PHP>
+         <PHP><head><link href="Ebus.css" rel="stylesheet" type="text/css"></head></PHP>
       
-
+                                                                                    <!--code for my radio buttons and prices for the web seervices-->
         <h2>Select A Product</h2>
         <div id ="maincontent">
             <br>
@@ -147,12 +140,16 @@ li a:hover {
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type = "text" id="subtotal" name="subtotal" value="0.00" readonly/>
             </label>
             <br><br>
+           
+                                                                           <!-- code for my discount for the web services-->
             <label for = "discount">
                 <strong>&nbsp; Discount @ 5%:</strong>
                 <input type = "text" id ="discount" name ="discount" readonly/>
                 <br> <strong> &nbsp;&nbsp;(-Discount)</strong>
             </label>
             <br><br>
+            
+                                                                            <!-- code for my VAT for the web services -->
             <label for ="vat">
                 <strong>&nbsp; Vat @ 10%:</strong>
                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type = "text" id ="vat" name ="vat" readonly />
@@ -176,7 +173,7 @@ li a:hover {
           
        
         
-        <br/>
+        <br/>                                                                               <!-- allows you to clear the data -->
         <div id ="button3">
         <a href="Ebus1.php"><button>Clear Choice</a></button>
         </div>

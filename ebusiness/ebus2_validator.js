@@ -2,7 +2,7 @@
 
 function validateDetails(){                    
     
-                                                    <!-- This is the code for my validator it allows me to make sure all details are entered correctly and fully -->
+                                                    /* This is the code for my validator it allows me to make sure all details are entered correctly and fully */
     
     var pin;
     var FirstName;
